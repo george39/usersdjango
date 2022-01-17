@@ -8,10 +8,11 @@
 </head>
 <body>
     <h1>Panel de usuario</h1>
-    <h3>Bienvenido</h3>
+    <h3>Bienvenido: {{user}}</h3>
+    
     <ul>
         <li><a href="{% url 'users_app:logout' %}">Cerrar sesion</a></li>
-        <li><a href="">Actualizar datos</a></li>
+        <li><a href="{% url 'users_app:update' %}">Actualizar datos</a></li>
     </ul> 
 </body>
 </html>
